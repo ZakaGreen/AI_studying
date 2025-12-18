@@ -38,7 +38,7 @@ nums = [num0, num1, num2, num3, num4, num5, num6, num7, num8, num9]
 tema = 5
 n_sensor = 15
 weights = [0 for i in range(n_sensor)]
-n = 1
+n = 1  # Количество итераций(уроков)
 
 for i in range(n):
     j = random.randint(0, 9)
@@ -46,8 +46,8 @@ for i in range(n):
     r = perceptron(nums[j])  # 1 or 0
 
     if j != tema:
-        if r:  # Ошибка: активировался на ≠5
-            print("Ошибка: активировался на ≠5")
+        if r:  # Ошибка: активировался на ≠ 5
+            print("Ошибка: активировался на ≠ 5")
             decrease(nums[j])
     else:
         if not r:  # Ошибка: не активировался на 5
