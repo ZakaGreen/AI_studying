@@ -2,7 +2,7 @@ import random
 
 
 def proceed(x):
-    return x * k + ccd
+    return x * k + c
 
 
 # коэфф при х
